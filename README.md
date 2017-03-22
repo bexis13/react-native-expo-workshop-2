@@ -33,3 +33,8 @@ On _PhotoList.js_ component you will have to write a _getPhotos_ function that u
 #### 6) Show our _Map_ component with a marker on the location passed on route params
 
 On _PhotoHeader.js_ component we have a _goToMap_ function that passes location info as params to our _MapScreen.js_ component. There we will have to get that params and pass them to the _Map.js_ component to render a marker pointing that location on a map.
+
+
+#### 7) Create platform-specific header on _ProfileCard_
+
+On _ProfileCard.js_ component set different LinearGradient colors depending on which OS is the user using _(e.a. set red color on iOS and blue on Android)_, and show a Text message with that OS.

@@ -6,6 +6,16 @@ import Colors from '../constants/Colors';
 
 const ProfileCard = props => (
   <ScrollView>
+
+    {/*
+      YOUR ASSIGNMENT:
+        Set different LinearGradient colors depending on which OS
+        is the user using.
+
+        TIP: check out Platform module from react-native
+        https://facebook.github.io/react-native/docs/platform-specific-code.html
+    */}
+
     <LinearGradient
       colors={[Colors.rmotrB300, Colors.rmotrB100]}
       style={styles.viewStyle}
@@ -19,6 +29,14 @@ const ProfileCard = props => (
       <Text style={styles.username}>
         {props.name || 'Anonymous'}
       </Text>
+
+      {/*
+        YOUR ASSIGNMENT:
+          Show a Text component with the OS that the device is using
+
+          TIP: check out Platform module from react-native
+          https://facebook.github.io/react-native/docs/platform-specific-code.html
+      */}
 
       <Text style={styles.email}>
         {props.email || 'anonymous@rmotr.com'}
@@ -35,7 +53,7 @@ ProfileCard.propTypes = {
 
 const styles = StyleSheet.create({
   viewStyle: {
-    height: 150,
+    height: 200,
     justifyContent: 'center',
     alignItems: 'center',
   },
