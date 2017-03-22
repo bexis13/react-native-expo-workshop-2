@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { ScrollView, Text, StyleSheet } from 'react-native';
+import { ScrollView, Text, Platform, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo';
 import Image from 'react-native-image-progress';
 import Colors from '../constants/Colors';
@@ -7,11 +7,11 @@ import Colors from '../constants/Colors';
 const ProfileCard = props => (
   <ScrollView>
     <LinearGradient
-      colors={[Colors.rmotrB300, Colors.rmotrB100]}
+      colors={Platform.OS === 'ios' ? [Colors.rmotrB300, Colors.rmotrB100] : [Colors.rmotrC, Colors.rmotrA]}
       style={styles.viewStyle}
     >
       <Image
-        style={styles.image}
+        style={Platform.OS === 'ios' ? styles.imageIOS : styles.imageANDROID}
         source={{ uri: props.picture || 'https://randomuser.me/api/portraits/lego/1.jpg' }}
         alt={'Image'}
       />
@@ -19,6 +19,9 @@ const ProfileCard = props => (
       <Text style={styles.username}>
         {props.name || 'Anonymous'}
       </Text>
+
+      { Platform.OS === 'ios' && <Text>(using IOS app)</Text> }
+      { Platform.OS === 'android' && <Text>(using ANDROID app)</Text> }
 
       <Text style={styles.email}>
         {props.email || 'anonymous@rmotr.com'}
@@ -35,15 +38,23 @@ ProfileCard.propTypes = {
 
 const styles = StyleSheet.create({
   viewStyle: {
-    height: 150,
+    height: 200,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
-  image: {
+  imageIOS: {
     height: 90,
     width: 90,
     borderRadius: 45,
+    borderWidth: 3,
+    borderColor: '#FFF',
+    marginBottom: 10,
+  },
+
+  imageANDROID: {
+    height: 90,
+    width: 90,
     borderWidth: 3,
     borderColor: '#FFF',
     marginBottom: 10,
