@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity,
          StyleSheet, Share } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import Image from 'react-native-image-progress';
-import { Ionicons } from '@exponent/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
 
 class PhotoHeader extends React.Component {

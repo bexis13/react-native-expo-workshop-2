@@ -1,7 +1,7 @@
 {
-  "name": "exponent-react-native-workshop-2",
+  "name": "react-native-expo-workshop-2",
   "version": "0.0.0",
-  "description": "Exponent React Native Workshop 2",
+  "description": "React Native Expo Workshop 2",
   "author": "Rmotr",
   "private": true,
   "main": "main.js",
@@ -9,14 +9,14 @@
     "test": "jest --no-cache --verbose"
   },
   "jest": {
-    "preset": "jest-exponent"
+    "preset": "jest-expo"
   },
   "dependencies": {
-    "@exponent/vector-icons": "~4.0.0",
-    "exponent": "^14.0.0",
+    "@expo/vector-icons": "~4.0.0",
+    "expo": "^15.0.2",
     "react": "~15.4.0",
     "react-addons-update": "^15.3.2",
-    "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz",
+    "react-native": "https://github.com/exponent/react-native/archive/sdk-15.0.0.tar.gz",
     "react-navigation": "^1.0.0-beta.6",
     "react-native-image-progress": "^0.6.0",
     "lodash": "^4.16.4",
@@ -29,6 +29,6 @@
     "eslint-config-rmotr": "^0.0.8",
     "eslint-plugin-react": "^6.10.0",
     "jest-cli": "^18.1.0",
-    "jest-exponent": "^0.2.1"
+    "jest-expo": "^0.2.1"
   }
 }

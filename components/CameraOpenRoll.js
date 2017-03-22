@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { View, TouchableOpacity, StyleSheet } from 'react-native';
-import { Foundation } from '@exponent/vector-icons';
-import { ImagePicker, Components } from 'exponent';
+import { Foundation } from '@expo/vector-icons';
+import { ImagePicker, LinearGradient } from 'expo';
 import Colors from '../constants/Colors';
 
 class CameraOpenRoll extends React.Component {
@@ -27,7 +27,7 @@ class CameraOpenRoll extends React.Component {
     return (
       <View style={styles.viewStyle}>
         <TouchableOpacity onPress={this.showRoll}>
-          <Components.LinearGradient
+          <LinearGradient
             colors={[Colors.rmotrB100, Colors.rmotrB300, Colors.rmotrB]}
             style={styles.linearGradient}
           >
@@ -35,7 +35,7 @@ class CameraOpenRoll extends React.Component {
               style={styles.icon}
               name="photo"
             />
-          </Components.LinearGradient>
+          </LinearGradient>
         </TouchableOpacity>
       </View>
     );
