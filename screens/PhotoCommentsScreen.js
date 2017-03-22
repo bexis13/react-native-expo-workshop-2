@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Platform, StatusBar, StyleSheet } from 'react-native';
-import { Foundation } from '@exponent/vector-icons';
+import { Foundation } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
 import PhotoComments from '../components/PhotoComments';
 

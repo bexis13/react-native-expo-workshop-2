@@ -1,4 +1,4 @@
-import Exponent from 'exponent';
+import Expo, { AppLoading } from 'expo';
 import React from 'react';
 import cacheAssetsAsync from './utils/cacheAssetsAsync';
 import GalleryStackNavigator from './navigators/GalleryStackNavigator';
@@ -38,8 +38,8 @@ class AppContainer extends React.Component {
       );
     }
 
-    return <Exponent.Components.AppLoading />;
+    return <AppLoading />;
   }
 }
 
-Exponent.registerRootComponent(AppContainer);
+Expo.registerRootComponent(AppContainer);

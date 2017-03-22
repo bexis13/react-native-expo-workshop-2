@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import { StyleSheet } from 'react-native';
-import { Components } from 'exponent';
+import { MapView } from 'expo';
 
 const Map = props => (
-  <Components.MapView
+  <MapView
     style={styles.mapView}
     initialRegion={{
       latitude: props.latitude,
@@ -12,13 +12,13 @@ const Map = props => (
       longitudeDelta: 0.08,
     }}
   >
-    <Components.MapView.Marker
+    <MapView.Marker
       coordinate={{
         latitude: props.latitude,
         longitude: props.longitude,
       }}
     />
-  </Components.MapView>
+  </MapView>
 );
 
 Map.propTypes = {

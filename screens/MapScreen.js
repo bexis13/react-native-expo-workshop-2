@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { View, Text,
          Platform, StatusBar, StyleSheet } from 'react-native';
-import { Foundation } from '@exponent/vector-icons';
+import { Foundation } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
 // import Map from '../components/Map';
 import PhotoGrid from '../components/PhotoGrid';

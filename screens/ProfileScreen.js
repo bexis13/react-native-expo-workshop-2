@@ -3,8 +3,8 @@ import { View, Alert, AsyncStorage,
          Platform, StatusBar,
          Text, StyleSheet } from 'react-native';
 import { Permissions, Util, Location,
-         Constants, Facebook } from 'exponent';
-import { FontAwesome } from '@exponent/vector-icons';
+           Constants, Facebook } from 'expo';
+import { FontAwesome } from '@expo/vector-icons';
 import { map, includes } from 'lodash';
 import Colors from '../constants/Colors';
 import googleConfig from '../constants/Google';

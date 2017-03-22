@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Text } from 'react-native';
-import { Font } from 'exponent';
+import { Font } from 'expo';
 
 const BillabongText = props => (
   <Text style={[props.style, Font.style('billabong')]}>

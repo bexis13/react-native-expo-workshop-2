@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 import { ScrollView, Text, StyleSheet } from 'react-native';
-import { Components } from 'exponent';
+import { LinearGradient } from 'expo';
 import Image from 'react-native-image-progress';
 import Colors from '../constants/Colors';
 
 const ProfileCard = props => (
   <ScrollView>
-    <Components.LinearGradient
+    <LinearGradient
       colors={[Colors.rmotrB300, Colors.rmotrB100]}
       style={styles.viewStyle}
     >
@@ -23,7 +23,7 @@ const ProfileCard = props => (
       <Text style={styles.email}>
         {props.email || 'anonymous@rmotr.com'}
       </Text>
-    </Components.LinearGradient>
+    </LinearGradient>
   </ScrollView>
 );
 
