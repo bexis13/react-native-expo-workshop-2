@@ -1,5 +1,8 @@
 import { StackNavigator } from 'react-navigation';
 import PhotoGalleryScreen from '../screens/PhotoGalleryScreen';
+// import PhotoCommentsScreen from '../screens/PhotoCommentsScreen';
+// import MapScreen from '../screens/MapScreen';
+
 
 /**
 YOUR ASSIGNMENT:
@@ -12,6 +15,14 @@ const FeedStackNavigator = StackNavigator(
     Gallery: {
       screen: PhotoGalleryScreen,
     },
+    /*
+    Comments: {
+      // add screen here
+    },
+    Map: {
+      // add screen here
+    },
+    */
   },
   {
     initialRouteName: 'Gallery',
