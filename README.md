@@ -37,3 +37,7 @@ On _PhotoHeader.js_ component we have a _goToMap_ function that passes location 
 #### 7) Create platform-specific header on _ProfileCard_
 
 On _ProfileCard.js_ component set different LinearGradient colors depending on which OS is the user using _(e.a. set red color on iOS and blue on Android)_, and show a Text message with that OS.
+
+#### 8) Publish your app and share it with your friends!
+
+Upload your app using `exp publish` command, then share your app link with your friends.
